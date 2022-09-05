@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+ 
+</head>
+<body>
+    <h2 style="color:blue;" align="center" id="home">Vigneshvar Company </h2>
+    <hr>
+    <div style="text-align: center"><a href="home.html" align="center">Home page</a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="#application.html" >Application form</a></div>
+    
+    <hr>
+    <form action="" method="post">
+        <fieldset>
+            <legend align="center" style="color:blue;"> Application form</legend>
+            <table align="center" style="color:blue;">
+                <tr>
+                    <td> Name</td>
+                    <td><input type="text" name="username" placeholder="enter your name" required></td>
+                </tr>
+                <tr>
+                    <td> Application number</td>
+                    <td><input type="text"  placeholder="KU2021CSE1001" required></td>
+                </tr>
+                <tr>
+                    <td> Password</td>
+                    <td><input type="password" placeholder="*********" required></td>
+                </tr>
+                <tr>
+                    <td>  Dath of Birth</td>
+                    <td><input type="date"></td>
+                </tr>
+                <tr>
+                    <td> Age</td>
+                    <td><input type="number"></td>
+                </tr>
+                <tr>
+                    <td> Mobile Number</td>
+                    <td><input type="tel" pattern="[0-9]{10}"></td>
+                </tr>
+                <tr>
+                    <td> Email</td>
+                    <td><input type="email" name="email"  placeholder="Enter Email id" required></td>
+                </tr>
+                <tr>
+                    <td>  Gender</td>
+                    <td><input type="radio" name="gender" value="Male">Male
+                        <input type="radio" name="gender" value="Female">Female</td>
+                </tr>
+                <tr>
+                    <td> Address</td>
+                    <td><input type="textarea" required></td>
+                </tr>
+                <tr>
+                    <td> Languages known</td>
+                    <td><input type="checkbox"  value="English">English
+                        <input type="checkbox"  value="Tamil">Tamil
+                        <input type="checkbox"  value="Malayalam">Malayalam
+                        <input type="checkbox"  value="Telugu">Telugu
+                        <input type="checkbox"  value="Hindi">Hindi</td>
+                </tr>
+                <tr>
+                    <td>Select your course</td>
+                    <td> <input type="text" list="items">
+                        <datalist id="items">
+                            <option value="B.Tech computer science and Engineering">
+                            <option value="Mechinical Engineering ">
+                            <option value="Civil Engineering">
+                            <option value="Agriculture">
+                        </datalist></td>
+                </tr>
+                <tr>
+                    <td>Upload your photo</td>
+                    <td><input type="file" required></td>
+                </tr>
+                <tr>
+                    <td> </td>
+                    <td><input type="submit"></td>
+                </tr>
+                
+            </table>
+            
+          
+    </form>
+    
+    
+</fieldset>
+    
+</body>
+</html>
