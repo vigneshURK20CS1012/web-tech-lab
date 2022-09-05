@@ -1,0 +1,225 @@
+*{
+    margin: 0;
+}
+
+h1{
+    background-color: darkblue;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+.banner{
+    background-image: url("https://www.karunya.edu/img/general/aerial-view.jpg.pagespeed.ce.4_-R-b0nuM.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 500px;
+}
+
+.about{
+    background-color: bisque;
+}
+
+.about h2{
+    text-align: center;
+    padding-top: 20px;
+    font-size: 30px;
+}
+
+.about p{
+    font-size: 19px;
+    padding: 14px;
+    text-align: justify;
+}
+
+
+.box1{
+    background-image: url("https://karunya.edu/sites/default/files/img/technology-mission/3d-printing.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 33.33%;
+    height: 350px;
+    float: left;
+}
+
+.box1 h2{
+    width: 100%;
+    font-size: 30px;
+    text-align: center;
+    padding: 10px;
+    color: white;
+    background-color: black;
+    opacity: 0.5;
+}
+
+.box1 h2:hover{
+    opacity: 1;
+}
+
+.box2{
+    background-image: url("https://karunya.edu/sites/default/files/img/site/front/academics.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 33.33%;
+    height: 350px;
+    float: left;
+    position: relative;
+}
+.box2 h2{
+    width: 96%;
+    font-size: 30px;
+    text-align: center;
+    padding: 10px;
+    color: white;
+    background-color: black;
+    opacity: 0.5;
+    position: absolute;
+    bottom: 0px;
+}
+
+.box2 h2:hover{
+    opacity: 1;
+}
+
+.box3{
+    background-image: url("https://orientacion.universia.net.co/imgs2011/imagenes/bacteroa2-2020_08_03_110512@2x.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 33.33%;
+    height: 350px;
+    float: left;
+}
+
+.box3 h2{
+    width: 96%;
+    font-size: 30px;
+    text-align: center;
+    padding: 10px;
+    color: white;
+    background-color: black;
+    opacity: 0.5;
+}
+
+.box3 h2:hover{
+    opacity: 1;
+}
+
+.boxinfo{
+    width: 50%;
+    height: 400px;
+    float: left;
+    background-color: bisque;
+}
+
+.boxinfo h2{
+    font-size: 28px;
+    width: 80%;
+    margin-left: 80px;
+    margin-top: 80px;
+}
+
+.boxinfo p{
+    margin: 0 80px;
+    margin-top: 10px;
+    font-size: 22px;
+    text-align: justify;
+}
+
+.box4{
+    background-image: url("https://karunya.edu/sites/default/files/img/site/campus-life/front-campus-life-1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+    height: 400px;
+    float: left;
+}
+
+.box5{
+    background-image: url("https://karunya.edu/sites/default/files/img/technology-mission/drone-for-agri.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+    height: 400px;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 15px;
+    width: 50%;
+    height: 80%;
+    background-color: white;
+}
+
+.form p{
+    width: 100%;
+    height: 60px;
+    font-size: 30px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+}
+
+.form label{
+    width: 100%;
+    height: 30px;
+}
+
+label,input{
+    display: block;
+}
+
+input[type=text]{
+    width: 93%;
+    height: 26px;
+    font-size: 18px;
+    color: black;
+    padding: 10px;
+    border: 3px solid #b5b5b5;
+    border-radius: 8px;
+    margin-bottom: 5px;
+    outline: none;
+}
+
+/* Pseudo class */
+input[type=text]:focus{
+    background-color: white;
+    border: 3px solid #3675c8;
+    box-shadow: 0 0 10px #5793db;
+}
+
+input[type=password]{
+    width: 93%;
+    height: 26px;
+    font-size: 18px;
+    color: black;
+    padding: 10px;
+    background-color: #d3d3d3;
+    border: 3px solid #d3d3d3;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    outline: none;
+}
+
+/* Pseudo class */
+input[type=password]:focus{
+    background-color: white;
+    border: 3px solid #3675c8;
+    box-shadow: 0 0 10px #5793db;
+}
+
+input[type=submit]{
+    width: 100%;
+    height: 46px;
+    font-size: 18px;
+    background-color: #0166fe;
+    border: 3px solid #0c5ccf;
+    border-radius: 5px;
+    margin-top: 45px;
+    color: white;
+}
