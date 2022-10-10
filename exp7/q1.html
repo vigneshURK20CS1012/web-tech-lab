@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function()
+        {
+            $('#Button').click(function()
+            {
+                let x=parseInt($('#BC').val())
+                let y=parseInt($('#CC').val())
+                let z=parseInt($('#ChC').val())
+                let a=parseInt($('#FC').val())
+                sum= (x*250)+(y*350)+(z*550)+(a*450)
+                $('#Result').html('<b>Rs.'+sum+'/-</b>')
+            })
+
+        })
+    </script>
+    <style>
+        *{
+            margin: 0px;
+        }
+        #header{
+            background-color: brown;
+            text-align: center;
+            color: aliceblue;
+        }
+
+        #C{
+            display: inline-block
+        }
+
+        #header2{
+            color: blue;
+            text-align: center;
+            font-size: large;
+        }
+    </style>
+</head>
+<body>
+    <div id="header" style="font-size: 30px;">Cake Shop</div>
+    <div id="C" style="position: absolute; left: 10px;">
+        <img id='i1' src="birthday cake.jpg" width="250" height="250" >
+        <p>Birthday Cake: Rs.250</p>
+    </div>
+    <div id="C" style="position: absolute; left: 400px;">
+        <img id='i2' src="candy cake.jpg" width="250" height="250">
+        <p>Candy Cake: Rs.350</p>
+    </div>
+    <div id="C" style="position: absolute; left: 800px;">
+        <img id='i3' src="cholocate cake.jpg" width="250" height="250">
+        <p>Chocolate Cake: Rs.550</p>
+    </div>
+    <div id="C" style="position: absolute; left: 1200px;">
+        <img id='i4' src="flower cake.jpg" width="250" height="250">
+        <p>Flower Cake: Rs.450</p> 
+    </div>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <div id="header2">
+        <b>ORDER CAKE</b>
+    </div>
+    <div id="Form" style="position: relative; left : 550px; color: blue;">
+        <p><b>Birthday Cake:</b></p>
+        <input type="text" name="" id="BC" value='0' style="width: 400px;"><br> <br>        
+        <p><b>Candy Cake:</b></p>
+        <input type="text" id="CC" value='0' style="width: 400px;"> <br> <br>
+        <p><b>Chocolate Cake:</b></p>
+        <input type="text" name="" id="ChC" value='0' style="width: 400px;"> <br> <br>
+        <p><b>Flower Cake:</b></p>
+        <input type="text" name="" id="FC" value='0' style="width: 400px;"> <br> <br>
+    </div>
+        <button id="Button" style="color: white; border-radius: 2px; width: 200px;position: relative; left: 600px; background-color: blue;"> Place order</button><br><br>
+        <hr style="background-color: blue; border: 1px solid blue;">
+        <h1 style="text-align: center; color: green">Purchase Order Bill!!!</h1>
+        <div style="color: white; background-color:green;display: inline-block;text-align: center; font-size: larger; width: 200px ;position: relative; left :470px;">Total Price </div>
+        <div id="Result" style="color: red; display: inline-block; text-align: center; font-size: larger; position: relative; left: 500px; "></div>
+    
+</body>
+</html>
