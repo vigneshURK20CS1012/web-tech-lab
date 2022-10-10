@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <div class="row">
+        <div class="col-2">
+            <img src="logo.png" alt="" width="100" height="50">
+        </div>
+        <div class="col-4">
+            <nav class="navbar navbar-expand-sm">
+
+                <div class="container-fluid">
+
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">clients</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">contact</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </nav>
+        </div>
+        <div class="col-2">
+            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">Login</button>
+            <div class="modal" id="myModal">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                            <h4 class="modal-title">Login Here</h4>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+
+                        <!-- Modal body -->
+                        <div class="modal-body">
+                            <form action="" class="text-start" >
+                                Email
+                                <input type="text" class="form-control">
+                                Password
+                                <input type="Password" class="form-control">
+                            </form>
+                        </div>
+
+                        <!-- Modal footer -->
+                        <div class="modal-footer">
+                            <button type="submit" class="btn btn-success">Login</button>
+                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-2 ">
+            <input type="search" class="form-control" placeholder="Search Here">
+        </div>
+        <div class="col-2">
+            <button type="submit" class="btn btn-primary">submit</button>
+        </div>
+        <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+            <!-- Indicators/dots -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="4"></button>
+
+            </div>
+
+            <!-- The slideshow/carousel -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="eye.jpg" alt="Los Angeles" height="400" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="tree.jpg" alt="Chicago" height="400" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="dog.jpg" alt="New York" height="400" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="bird.jpg" alt="Los Angeles" height="400" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="flower.jpg" alt="Los Angeles" height="400" class="d-block w-100">
+                </div>
+            </div>
+
+            <!-- Left and right controls/icons -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+        <div >
+            <div class="row" >
+                <div class="col">
+                    <img src="laptop.jpg" alt="" width="500" height="500">
+                </div>   
+                <div class="col">
+                    <h3 class="">Registration Form</h3>
+                    
+                Name<br> 
+                <input type="text" class="form-control"><br>
+                Email<br>
+                <input type="email" class="form-control"><br>
+                Password<br>
+                <input type="Password" class="form-control"><br>
+                city<br>
+                <input type="text" class="form-control"><br>
+                State
+                    <input type="text" list="items" class="form-control">
+                        <datalist id="items">
+                            <option value="Tamil Nadu">
+                            <option value="Andhra ">
+                            <option value="Goa">
+                            <option value="Gujarat">
+                        </datalist><br>
+                        <button type="submit" class="btn btn-primary" class="table-primary">Register</button>         
+                
+            </form>
+        </div>
+
+
+
+        </div>
+        <div class="container mt-3">           
+            <table class="table table-bordered">
+              <thead class="table-primary">
+                <tr>
+                  <th>S.No</th>
+                  <th>Reg.No</th>
+                  <th>Name of the Participant</th>
+                  <th>Collaborative activity</th>
+                  <th>Collaborative Agency</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>URK20CS1010</td>
+                  <td>john</td>
+                  <td>Product Design and Analysis</td>
+                  <td>CADD center</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>URK20CS1011</td>
+                    <td>josh</td>
+                    <td>Product Design and Analysis</td>
+                    <td>CADD center</td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>URK20CS1012</td>
+                    <td>akash</td>
+                    <td>Product Design and Analysis</td>
+                    <td>CADD center</td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td>URK20CS1013</td>
+                    <td>vinoth</td>
+                    <td>Product Design and Analysis</td>
+                    <td>CADD center</td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td>URK20CS1014</td>
+                    <td>vicky</td>
+                    <td>Product Design and Analysis</td>
+                    <td>CADD center</td>
+                  </tr>
+                  <tr>
+                    <td>6</td>
+                    <td>URK20CS1015</td>
+                    <td>andrew</td>
+                    <td>Product Design and Analysis</td>
+                    <td>CADD center</td>
+                  </tr>
+              </tbody>
+            </table>
+          </div>
+          
+
+
+
+
+
+
+</body>
+
+</div>
+
+</body>
+
+</html>
