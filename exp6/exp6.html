@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="q1js.js"></script>
+    <script>
+        var items=[]
+        function save(){
+            var data=document.getElementById('data').value+'-'+document.getElementById('data1').value;
+            for(var i=0;i<items.length;i++)
+            {
+                if (data === items[i])
+                {
+                    window.alert('Contact Number Already Exists.\n'+data)
+                    return 0;
+                }   
+            }
+            items.push(data);
+            result='<ol>'
+            for(var i=0;i<items.length;i++)
+            {
+                result+='<li>'+items[i]+'</li>'   
+            }
+            result+='</ol>'
+            document.getElementById('result').innerHTML=result
+        }
+        function removefirst(){
+            items.shift();
+            result='<ol>'
+            for(var i=0;i<items.length;i++)
+            {
+                result+='<li>'+items[i]+'</li>'   
+            }
+            result+='</ol>'
+            document.getElementById('result').innerHTML=result
+        }
+        function removelast()
+        {
+            items.pop();
+            result='<ol>'
+            for(var i=0;i<items.length;i++)
+            {
+                result+='<li>'+items[i]+'</li>'   
+            }
+            result+='</ol>'
+            document.getElementById('result').innerHTML=result
+        }
+    </script>
+</head>
+<body>
+    <div align='center' style="color: blue; font-size: large;">
+        <h1>Telephone Directory</h1>
+    </div>
+    Name: <input type="text" id="data">
+    Telephone: <input type="tel" id="data1">
+    <br><br>
+    <button onclick="save()" style="color:blue">Save</button>
+    <button onclick="removefirst()">Remove First</button>
+    <button onclick="removelast()">Remove Last</button>
+    <hr>
+    <div id="result"></div>
+    <hr>
+</body>
+</html>

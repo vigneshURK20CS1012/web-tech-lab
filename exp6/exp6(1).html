@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="q1js.js"></script>
+    <style>
+        #resultbox{
+            border: 100px soild blue;
+            color: blue;
+            background-color: yellow;
+            margin: auto;
+            width: 300px;
+            height: 200px;
+        }
+        #backdrop{
+            background-color: rgb(138, 133, 133);
+        }
+        *{
+            margin: 0px;
+
+        }
+    </style>
+</head>
+<body>
+    <div id="backdrop">
+        <div id="resultbox">
+            Welcome Text
+        </div><br><br>
+        Background Color :<input type="color" id='bgcolor' onchange="change()"><br><br>
+        Text Color : <input type="color" id='tcolor' onchange="change()"><br><br>
+        Text Size : <input type="number" id='tsize'  onchange="change()"><br><br>
+        Box Width : <input type="text" id='bwidth'  onkeydown="change()"><br><br>
+        Box Height : <input type="text" id='bheight'  onkeydown="change()"><br><br>
+        Border Radius : <input type="range" min="0" max="50" value="10" id="radius" onchange="change()"><br><br>
+    </div>
+</body>
+</html>
