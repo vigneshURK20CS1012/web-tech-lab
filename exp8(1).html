@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script>
+        var app = angular.module("myapp",[])//module
+        app.controller("control",function($scope){
+            
+             $scope.avg=function(){
+                 let a = parseInt($scope.m1)
+                 let b = parseInt($scope.m2)
+                 let c = parseInt($scope.m3)
+                 let d = parseInt($scope.m4)
+                 let e = parseInt($scope.m5)
+                 var sum =a+b+c+d+e;
+                 $scope.result=(sum/5);
+                if ($scope.result >=95)
+                    $scope.grade='S';
+                else if ($scope.result >=85 && $scope.result<=95)
+                    $scope.grade='A';
+                else if ($scope.result >=75 && $scope.result<=85)
+                    $scope.grade='B';
+                else if ($scope.result >=65 && $scope.result<=75)
+                    $scope.grade='C';
+                else if ($scope.result >=55 && $scope.result<=65)
+                    $scope.grade='D';
+                else if ($scope.result >=45 && $scope.result<=55)
+                    $scope.grade='E';
+                else
+                    $scope.grade='F';
+             }
+            // $scope.result="data";
+    
+        });
+        </script>
+</head>
+<body body ng-app="myapp" ng-controller="control">
+<div style="background-color:blue; height: 50px;color:whitesmoke">
+    <h1 style="color:white;"align ="center">MY College</h1>
+    
+
+   
+</div><BR>
+<h1 style="color:red" align="center">
+    Grade Evaluation
+</h1>
+<div style="color:blue;  " align="center" >
+    student<br><input type="text" ng-model="name" size="100px"><br><br>
+    student regNo<br><input type="text" ng-model="reg" size="100px" ><br><br>
+    course 1 Marks<br><input type="text" ng-model="m1" size="100px"><br><br>
+    course 2 Marks<br><input type="text" ng-model="m2"size="100px" ><br><br>
+    course 3 Marks<br><input type="text" ng-model="m3"size="100px" ><br><br>
+    course 4 Marks<br><input type="text" ng-model="m4"size="100px" ><br><br>
+    course 5 marks<br><input type="text" ng-model="m5" size="100px"><br>
+</div><br>
+    <div align="center" ><button  ng-click="avg()" style="background-color: blue;color: white; width: 500px; border: 0;height: 30px;">FIND GRADE </button><hr style="color: green;"></div>
+    <div style="color:green; font-size: 30px;" align="center" >Grade Details: 
+        
+    </div><br>
+
+    <div align ="center"style="color:white; font-size: 30px; background-color:green;width:270px; position:absolute; left:500px">Average mark<div style="color:red;position: absolute;left:300px;top: 0.5px;">{{result}}</div></div><br><br><br>
+     
+    <div align ="center"style="color:white; font-size: 29px; background-color:green;width:270px; position:absolute; left:500px">GRADE<div style="color:red;position: absolute;left:300px;top:7px;"> {{grade}}</div></div>
+   
+</body>
+</html>
